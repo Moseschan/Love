@@ -14,6 +14,7 @@
 
 @implementation ViewController
 @synthesize _label_count_down;
+@synthesize _label_518;
 
 - (void)viewDidLoad
 {
@@ -22,10 +23,12 @@
     //立刻执行倒数计时
     [self updateInfoTime];
     [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(updateInfoTime) userInfo:nil repeats:YES];
+    
 }
 //更新UI
 -(void)updateInfoTime{
     _label_count_down.text = [self getDaysBetweenTwoTime];
+    _label_518.text        = [self getDaysBetweenTwoTime518];
 }
 
 /**计算公历y2年m2月d2日 距y年m月d日的天数*///未用
@@ -66,6 +69,17 @@
     return [NSString stringWithFormat:@"%d天%d小时%d分钟%d秒",days,hours,minutes,seconds];
 }
 
+-(NSString *)getDaysBetweenTwoTime518{
+    NSDate *nowDate = [NSDate date];
+    NSDate *realDate = [self getRealTime518];
+    NSTimeInterval time=[nowDate timeIntervalSinceDate:realDate];
+    int days=((int)time)/(3600*24);
+    int hours=((int)time)%(3600*24)/3600;
+    int minutes = ((int)time)%(3600*24)%3600/60;
+    int seconds = ((int)time)%(3600*24)%3600%60;
+    return [NSString stringWithFormat:@"%d天%d小时%d分钟%d秒",days,hours,minutes,seconds];
+}
+
 //String  2  date
 //输入的日期字符串形如：@"1992-05-21 13:08:08"
 
@@ -76,4 +90,12 @@
     NSDate *destDate= [dateFormatter dateFromString:dateString];
     return destDate;
 }
+- (NSDate *)getRealTime518{
+    NSString *dateString = [NSString stringWithFormat:@"2013-05-18 13:14:00"];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat: @"yyyy-MM-dd HH:mm:ss"];
+    NSDate *destDate= [dateFormatter dateFromString:dateString];
+    return destDate;
+}
+
 @end

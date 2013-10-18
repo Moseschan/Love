@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		272F94E717EECE2900ED140D /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 272F94E617EECE2900ED140D /* Icon.png */; };
+		272F94E917EECE2E00ED140D /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 272F94E817EECE2E00ED140D /* Icon@2x.png */; };
+		2791D15717F2E6B600E89FD0 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2791D15617F2E6B600E89FD0 /* logo.png */; };
 		27A3913017E6AD1700778439 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27A3912F17E6AD1700778439 /* UIKit.framework */; };
 		27A3913217E6AD1700778439 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27A3913117E6AD1700778439 /* Foundation.framework */; };
 		27A3913417E6AD1700778439 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27A3913317E6AD1700778439 /* CoreGraphics.framework */; };
@@ -18,9 +21,13 @@
 		27A3914617E6AD1700778439 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27A3914517E6AD1700778439 /* Default-568h@2x.png */; };
 		27A3914917E6AD1700778439 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A3914817E6AD1700778439 /* ViewController.m */; };
 		27A3914C17E6AD1700778439 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27A3914A17E6AD1700778439 /* ViewController.xib */; };
+		27BDB864180FE99E005BA688 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 27BDB863180FE99E005BA688 /* bg.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		272F94E617EECE2900ED140D /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
+		272F94E817EECE2E00ED140D /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../Icon@2x.png"; sourceTree = "<group>"; };
+		2791D15617F2E6B600E89FD0 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = ../logo.png; sourceTree = "<group>"; };
 		27A3912C17E6AD1700778439 /* JCLove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JCLove.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27A3912F17E6AD1700778439 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		27A3913117E6AD1700778439 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -37,6 +44,7 @@
 		27A3914717E6AD1700778439 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		27A3914817E6AD1700778439 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		27A3914B17E6AD1700778439 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		27BDB863180FE99E005BA688 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +104,10 @@
 		27A3913617E6AD1700778439 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				27BDB863180FE99E005BA688 /* bg.jpg */,
+				2791D15617F2E6B600E89FD0 /* logo.png */,
+				272F94E817EECE2E00ED140D /* Icon@2x.png */,
+				272F94E617EECE2900ED140D /* Icon.png */,
 				27A3913717E6AD1700778439 /* JCLove-Info.plist */,
 				27A3913817E6AD1700778439 /* InfoPlist.strings */,
 				27A3913B17E6AD1700778439 /* main.m */,
@@ -163,6 +175,10 @@
 				27A3914417E6AD1700778439 /* Default@2x.png in Resources */,
 				27A3914617E6AD1700778439 /* Default-568h@2x.png in Resources */,
 				27A3914C17E6AD1700778439 /* ViewController.xib in Resources */,
+				272F94E717EECE2900ED140D /* Icon.png in Resources */,
+				272F94E917EECE2E00ED140D /* Icon@2x.png in Resources */,
+				2791D15717F2E6B600E89FD0 /* logo.png in Resources */,
+				27BDB864180FE99E005BA688 /* bg.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +314,7 @@
 				27A3915117E6AD1700778439 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

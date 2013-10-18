@@ -11,4 +11,6 @@
 @interface ViewController : UIViewController
 
 @property(nonatomic,retain)IBOutlet UILabel *_label_count_down;
+@property(nonatomic,retain)IBOutlet UILabel *_label_518;
+
 @end
